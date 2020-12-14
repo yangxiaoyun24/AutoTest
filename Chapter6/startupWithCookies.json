@@ -1,5 +1,21 @@
 [
   {
+    "description":"这是一个回返回cookies信息的get请求",
+    "request":{
+      "uri":"/getCookies",
+      "method":"get"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜获取cookies成功"
+    }
+  },
+  {
     "description":"这是一个带cookies信息的get请求",
     "request":{
       "uri":"/get/with/cookies",
@@ -9,6 +25,9 @@
       }
     },
   "response":{
+    "headers":{
+      "Content-Type":"text/html;charset=gbk"
+    },
     "text":"模拟一个带cookies信息才能访问的get请求"
   }
   },
@@ -22,10 +41,13 @@
       },
       "json":{
         "name":"huhansan",
-        "age":18
+        "age":"18"
       }
     },
     "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
       "status":200,
       "json":{
         "huhansan":"success",
